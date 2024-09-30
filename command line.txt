@@ -1,0 +1,6 @@
+python demo.py --cfg_file cfgs/kitti_models/pv_rcnn.yaml     --ckpt models/kitti/pv_rcnn_8369.pth     --data_path output.bin --ext .bin
+
+python demo.py --cfg_file cfgs/nuscenes_models/cbgs_voxel0075_res3d_centerpoint.yaml    --ckpt models/nuscene/cbgs_pp_centerpoint_nds6070.pth     --data_path output.npy --ext .npy
+
+
+python test.py --cfg_file cfgs/nuscenes_models/transfusion_lidar.yaml   --batch_size 1 --ckpt models/nuscene/cbgs_transfusion_lidar.pth
